@@ -1,0 +1,25 @@
+Title:    WebFonts 2025 charter
+Draft:    https://w3c.github.io/charter-drafts/2025/webfonts-wg.html
+ED:       none
+Date:     2024-12-19
+Status:   Charter
+Intro:    <p>Experimental disposition of comments from charter review
+
+----
+Issue 1.
+Summary:  ISO WG for OFF has changed
+From:     Vladimir Levantovsky 
+Comment:  https://github.com/w3c/IFT/issues/248#issuecomment-2544277944
+Response: https://github.com/w3c/IFT/issues/248#issuecomment-2548240773
+Closed:   Accepted
+Verified: [url]
+Resolved: Bugfix (for obvious fixes)
+----
+Issue 2.
+Summary:  Will participants need to rejoin
+From:     Vladimir Levantovsky 
+Comment:  https://github.com/w3c/IFT/issues/248#issuecomment-2544277944
+Response: https://github.com/w3c/IFT/issues/248#issuecomment-2548240773
+Closed:   Invalid
+Resolved: No change, will not need to rejoin
+----
