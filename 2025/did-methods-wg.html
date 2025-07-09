@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>PROPOSED DID Methods Working Group Charter</title>
+    <title>DRAFT DID Methods Working Group Charter</title>
 
     <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
@@ -72,7 +72,7 @@
 
 
     <main>
-      <h1 id="title">PROPOSED DID Methods Working Group Charter</h1>
+      <h1 id="title">DRAFT DID Methods Working Group Charter</h1>
       <!-- delete PROPOSED after AC review completed -->
 
       <p class="mission">
@@ -90,9 +90,9 @@ Group</a>
 
       <!-- delete the GH link after AC review completed -->
       <p style="padding: 0.5ex; border: 1px solid green">
-This proposed charter is available on
-<a href="https://github.com/msporny/w3c-dmwg">GitHub</a>. Feel free to raise
-<a href="https://github.com/msporny/w3c-dmwg/issues">issues</a></i>.
+This draft charter is available on
+<a href="https://github.com/w3c/did-methods-wg-charter/">GitHub</a>. Feel free to raise
+<a href="https://github.com/w3c/did-methods-wg-charter/issues">issues</a></i>.
       </p>
 
       <div id="details">
@@ -111,7 +111,7 @@ status page</A> and <a href="#history">detailed change history</a>.</i>
               Start date
             </th>
             <td>
-01 January 2025
+01 August 2025
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -119,7 +119,7 @@ status page</A> and <a href="#history">detailed change history</a>.</i>
               End date
             </th>
             <td>
-31 December 2026
+01 August 2027
             </td>
           </tr>
           <tr>
@@ -127,7 +127,9 @@ status page</A> and <a href="#history">detailed change history</a>.</i>
               Chairs
             </th>
             <td>
-              <i class="todo">[chair name] (affiliation)</i>
+              <i class="todo">Markus Sabadello (Danube Tech)</i>
+              <br>
+              <i class="todo">Jonathan Rayback</i>
             </td>
           </tr>
           <tr>
@@ -175,8 +177,9 @@ standardization at W3C.
       <section id="scope" class="scope">
         <h2>Scope</h2>
         <p>
-The scope of the initial DID Methods Working Group will be to standardize
-one Web-based DID Method and one ephemeral DID Method.
+The scope of the initial DID Methods Working Group will be to standardize at
+least one ephemeral DID Method, one Web-based DID Method, and one fully
+decentralized DID Method based on Web technologies.
         </p>
 
         <section id="section-out-of-scope">
@@ -188,8 +191,7 @@ Working Group.
 
             <ul class="out-of-scope">
               <li>
-Non-Web-based DID Methods such as Blockchain and Decentralized Hashtable-based
-DID Methods.
+Non-Web-based DID Methods such as Blockchain-based DID Methods.
               </li>
             </ul>
         </section>
@@ -219,23 +221,7 @@ The Working Group will deliver the following W3C normative specifications:
           </p>
 
           <dl>
-            <dt id="web-based-did-method" class="spec">
-A Web-based DID Method
-            </dt>
-            <dd>
-              <p>
-This specification defines a mechanism to create and manage DID Documents using
-websites.
-              </p>
-
-              <p class="draft-status">
-<b>Draft state:</b> <a href="#">Editor's Draft (adopted from @@@)</a>
-              </p>
-              <p class="milestone">
-<b>Expected completion:</b> Q1 2026
-              </p>
-            </dd>
-            <dt id="web-based-did-method" class="spec">
+            <dt id="ephemeral-did-method" class="spec">
 An Ephemeral DID Method
             </dt>
             <dd>
@@ -245,10 +231,60 @@ Documents, such as those based on public cryptographic key information.
               </p>
 
               <p class="draft-status">
-<b>Draft state:</b> <a href="#">Editor's Draft (adopted from @@@)</a>
+                  <b>Draft specifications:</b> Inputs to the Working Group include:
+                  <ul>
+                    <li><code>did:key</code> (<a href="https://w3c-ccg.github.io/did-key-spec/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-key.md">standardization proposal</a>)</li>
+                  </ul>
               </p>
               <p class="milestone">
-<b>Expected completion:</b> Q1 2026
+<b>Expected completion:</b> Q3 2026
+              </p>
+            </dd>
+
+            <dt id="web-did-method" class="spec">
+A Web-based DID Method
+            </dt>
+            <dd>
+              <p>
+This specification defines a mechanism to create and manage DID Documents using
+websites.
+              </p>
+
+              <p class="draft-status">
+                  <b>Draft specifications:</b> Inputs to the Working Group include:
+                  <ul>
+                    <li><code>did:web</code> (<a href="https://w3c-ccg.github.io/did-method-web/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-web.md">standardization proposal</a>)</li>
+                    <li><code>did:webplus</code> (<a href="https://github.com/LedgerDomain/did-webplus">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webplus.md">standardization proposal</a>)</li>
+                    <li><code>did:webs</code> (<a href="https://trustoverip.github.io/tswg-did-method-webs-specification/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webs.md">standardization proposal</a>)</li>
+                    <li><code>did:webvh</code> (<a href="https://identity.foundation/didwebvh/v1.0/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webvh.md">standardization proposal</a>)</li>
+                    <li><code>did:scid</code> (<a href="https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/88572360/DID+SCID+Method+Specification">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-scid.md">standardization proposal</a>)</li>
+                  </ul>
+              </p>
+              <p class="milestone">
+<b>Expected completion:</b> Q3 2026
+              </p>
+            </dd>
+            <dt id="full-did-method" class="spec">
+An Fully Decentralized DID Method
+            </dt>
+            <dd>
+              <p>
+This specification defines a mechanism to create and manage the full
+lifecycle for DID Documents using Web technology but without any sort of
+required centralization.
+              </p>
+
+              <p class="draft-status">
+                  <b>Draft specifications:</b> Inputs to the Working Group include:
+                    <ul>
+                      <li><code>did:webvh</code> without domain binding (<a href="https://identity.foundation/didwebvh/v1.0/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webvh.md">standardization proposal</a>)</li>
+                      <li><code>did:peer</code> (<a href="https://identity.foundation/peer-did-method-spec/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-peer.md">standardization proposal</a>)</li>
+                      <li><code>did:scid</code> (<a href="https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/88572360/DID+SCID+Method+Specification">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-scid.md">standardization proposal</a>)</li>
+                      <li>a DID Method using a <a href="https://docs.google.com/presentation/d/1PKmycxKKww3FoAu-X19Pep--Z_vWZEbyjb19OcW0bSA/edit">cryptographic event log</a> of some kind</li>
+                    </ul>
+              </p>
+              <p class="milestone">
+<b>Expected completion:</b> Q1 2027
               </p>
             </dd>
           </dl>
@@ -607,8 +643,8 @@ W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:
                 <th>
                   <a class="todo" href="">Initial Charter</a>
                 </th>
-                <td>01 January 2025</td>
-                <td>31 December 2026</td>
+                <td>01 June 2025</td>
+                <td>01 June 2027</td>
                 <td>None</td>
               </tr>
             </tbody>
@@ -644,7 +680,7 @@ W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:
       <a rel="license" href="https://www.w3.org/copyright/software-license/" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
 
       <hr>
-      <p><span class='todo'><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</span></p>
+      <p><span class='todo'><a href="https://github.com/w3c/did-methods-wg-charter/">Yes, it's on GitHub!</a>.</span></p>
     </footer>
 
   </body>
