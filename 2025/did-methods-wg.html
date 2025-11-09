@@ -226,8 +226,9 @@ An Ephemeral DID Method
             </dt>
             <dd>
               <p>
-This specification defines a mechanism to create and manage ephemeral DID
-Documents, such as those based on public cryptographic key information.
+This specification defines a mechanism to create and manage DID
+Documents entirely based on the identifier, such as those based on public cryptographic key information.
+Such a mechanism typically does not support key rotation or deactivation, which makes it more suitable for short-lived DIDs and DID documents.
               </p>
 
               <p class="draft-status">
@@ -270,8 +271,9 @@ A Fully Decentralized DID Method
             <dd>
               <p>
 This specification defines a mechanism to create and manage the full
-lifecycle for DID Documents using Web technology but without any sort of
+lifecycle for DID Documents (create, resolve, update, deactivate) using Web technology but without any sort of
 required centralization.
+Such a method is not susceptible to a single point of failure for any technical system needed for the basic operation of the DID Method.
               </p>
 
               <p class="draft-status">
