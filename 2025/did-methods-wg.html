@@ -230,13 +230,6 @@ This specification defines a mechanism to create and manage DID
 Documents entirely based on the identifier, such as those based on public cryptographic key information.
 Such a mechanism typically does not support key rotation or deactivation, which makes it more suitable for short-lived DIDs and DID documents.
               </p>
-
-              <p class="draft-status">
-                  <b>Draft specifications:</b> Inputs to the Working Group include:
-              </p>
-              <ul>
-                <li><code>did:key</code> (<a href="https://w3c-ccg.github.io/did-key-spec/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-key.md">standardization proposal</a>)</li>
-              </ul>
               <p class="milestone">
 <b>Expected completion:</b> <i class=todo>START+12M</i>
               </p>
@@ -251,16 +244,6 @@ This specification defines a mechanism to create and manage DID Documents using
 websites.
               </p>
 
-              <p class="draft-status">
-                  <b>Draft specifications:</b> Inputs to the Working Group include:
-              </p>
-              <ul>
-                <li><code>did:web</code> (<a href="https://w3c-ccg.github.io/did-method-web/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-web.md">standardization proposal</a>)</li>
-                <li><code>did:webplus</code> (<a href="https://github.com/LedgerDomain/did-webplus">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webplus.md">standardization proposal</a>)</li>
-                <li><code>did:webs</code> (<a href="https://trustoverip.github.io/tswg-did-method-webs-specification/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webs.md">standardization proposal</a>)</li>
-                <li><code>did:webvh</code> (<a href="https://identity.foundation/didwebvh/v1.0/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webvh.md">standardization proposal</a>)</li>
-                <li><code>did:scid</code> (<a href="https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/88572360/DID+SCID+Method+Specification">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-scid.md">standardization proposal</a>)</li>
-              </ul>
               <p class="milestone">
 <b>Expected completion:</b> <i class=todo>START+12M</i>
               </p>
@@ -276,19 +259,25 @@ required centralization.
 Such a method is not susceptible to a single point of failure for any technical system needed for the basic operation of the DID Method.
               </p>
 
-              <p class="draft-status">
-                  <b>Draft specifications:</b> Inputs to the Working Group include:
-                    <ul>
-                      <li><code>did:webvh</code> without domain binding (<a href="https://identity.foundation/didwebvh/v1.0/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webvh.md">standardization proposal</a>)</li>
-                      <li><code>did:peer</code> (<a href="https://identity.foundation/peer-did-method-spec/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-peer.md">standardization proposal</a>)</li>
-                      <li><code>did:scid</code> (<a href="https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/88572360/DID+SCID+Method+Specification">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-scid.md">standardization proposal</a>)</li>
-                      <li>a DID Method using a <a href="https://w3c-ccg.github.io/cel-spec/">cryptographic event log</a> of some kind</li>
-                    </ul>
               <p class="milestone">
 <b>Expected completion:</b> <i class=todo>START+18M</i>
               </p>
             </dd>
           </dl>
+
+          <p>
+          The working group will consider the following proposed DID methods and other specifications as input documents:</p>
+
+          <ul>
+                <li><code>did:key</code> (<a href="https://w3c-ccg.github.io/did-key-spec/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-key.md">standardization proposal</a>)</li>
+                <li><code>did:web</code> (<a href="https://w3c-ccg.github.io/did-method-web/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-web.md">standardization proposal</a>)</li>
+                <li><code>did:webplus</code> (<a href="https://github.com/LedgerDomain/did-webplus">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webplus.md">standardization proposal</a>)</li>
+                <li><code>did:webs</code> (<a href="https://trustoverip.github.io/tswg-did-method-webs-specification/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webs.md">standardization proposal</a>)</li>
+                <li><code>did:webvh</code> (<a href="https://identity.foundation/didwebvh/v1.0/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webvh.md">standardization proposal</a>)</li>
+                <li><code>did:scid</code> (<a href="https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/88572360/DID+SCID+Method+Specification">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-scid.md">standardization proposal</a>)</li>
+                <li><code>did:peer</code> (<a href="https://identity.foundation/peer-did-method-spec/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-peer.md">standardization proposal</a>)</li>
+                <li><a href="https://w3c-ccg.github.io/cel-spec/">cryptographic event log</a></li>
+          </ul>
         </section>
 
         <section id="incubation">
