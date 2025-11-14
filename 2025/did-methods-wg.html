@@ -111,7 +111,7 @@ status page</A> and <a href="#history">detailed change history</a>.
               Start date
             </th>
             <td>
-01 August 2025
+              <i class=todo>TBD</i>
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -119,7 +119,7 @@ status page</A> and <a href="#history">detailed change history</a>.
               End date
             </th>
             <td>
-01 August 2027
+              <i class=todo>START+24M</i>
             </td>
           </tr>
           <tr>
@@ -217,7 +217,7 @@ projected to become a Recommendation, or otherwise reach a stable state.
             Normative Specifications
           </h3>
           <p>
-The Working Group will deliver the following W3C normative specifications:
+The Working Group will deliver one or more W3C normative specification for each of the following categories of DID methods:
           </p>
 
           <dl>
@@ -230,15 +230,8 @@ This specification defines a mechanism to create and manage DID
 Documents entirely based on the identifier, such as those based on public cryptographic key information.
 Such a mechanism typically does not support key rotation or deactivation, which makes it more suitable for short-lived DIDs and DID documents.
               </p>
-
-              <p class="draft-status">
-                  <b>Draft specifications:</b> Inputs to the Working Group include:
-              </p>
-              <ul>
-                <li><code>did:key</code> (<a href="https://w3c-ccg.github.io/did-key-spec/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-key.md">standardization proposal</a>)</li>
-              </ul>
               <p class="milestone">
-<b>Expected completion:</b> Q3 2026
+<b>Expected completion:</b> <i class=todo>START+12M</i>
               </p>
             </dd>
 
@@ -251,18 +244,8 @@ This specification defines a mechanism to create and manage DID Documents using
 websites.
               </p>
 
-              <p class="draft-status">
-                  <b>Draft specifications:</b> Inputs to the Working Group include:
-              </p>
-              <ul>
-                <li><code>did:web</code> (<a href="https://w3c-ccg.github.io/did-method-web/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-web.md">standardization proposal</a>)</li>
-                <li><code>did:webplus</code> (<a href="https://github.com/LedgerDomain/did-webplus">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webplus.md">standardization proposal</a>)</li>
-                <li><code>did:webs</code> (<a href="https://trustoverip.github.io/tswg-did-method-webs-specification/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webs.md">standardization proposal</a>)</li>
-                <li><code>did:webvh</code> (<a href="https://identity.foundation/didwebvh/v1.0/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webvh.md">standardization proposal</a>)</li>
-                <li><code>did:scid</code> (<a href="https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/88572360/DID+SCID+Method+Specification">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-scid.md">standardization proposal</a>)</li>
-              </ul>
               <p class="milestone">
-<b>Expected completion:</b> Q3 2026
+<b>Expected completion:</b> <i class=todo>START+12M</i>
               </p>
             </dd>
             <dt id="full-did-method" class="spec">
@@ -276,20 +259,26 @@ required centralization.
 Such a method is not susceptible to a single point of failure for any technical system needed for the basic operation of the DID Method.
               </p>
 
-              <p class="draft-status">
-                  <b>Draft specifications:</b> Inputs to the Working Group include:
-                    <ul>
-                      <li><code>did:webvh</code> without domain binding (<a href="https://identity.foundation/didwebvh/v1.0/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webvh.md">standardization proposal</a>)</li>
-                      <li><code>did:peer</code> (<a href="https://identity.foundation/peer-did-method-spec/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-peer.md">standardization proposal</a>)</li>
-                      <li><code>did:scid</code> (<a href="https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/88572360/DID+SCID+Method+Specification">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-scid.md">standardization proposal</a>)</li>
-                      <li>a DID Method using a <a href="https://w3c-ccg.github.io/cel-spec/">cryptographic event log</a> of some kind</li>
-                    </ul>
-              </p>
               <p class="milestone">
-<b>Expected completion:</b> Q1 2027
+<b>Expected completion:</b> <i class=todo>START+18M</i>
               </p>
             </dd>
           </dl>
+
+          <p>
+          The working group will consider the following proposed DID methods and other specifications as input documents:</p>
+
+          <ul>
+                <li><code>did:key</code> (<a href="https://w3c-ccg.github.io/did-key-spec/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-key.md">standardization proposal</a>)</li>
+                <li><code>did:web</code> (<a href="https://w3c-ccg.github.io/did-method-web/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-web.md">standardization proposal</a>)</li>
+                <li><code>did:webplus</code> (<a href="https://github.com/LedgerDomain/did-webplus">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webplus.md">standardization proposal</a>)</li>
+                <li><code>did:webs</code> (<a href="https://trustoverip.github.io/tswg-did-method-webs-specification/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webs.md">standardization proposal</a>)</li>
+                <li><code>did:webvh</code> (<a href="https://identity.foundation/didwebvh/v1.0/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-webvh.md">standardization proposal</a>)</li>
+                <li><code>did:scid</code> (<a href="https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/88572360/DID+SCID+Method+Specification">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-scid.md">standardization proposal</a>)</li>
+                <li><code>did:peer</code> (<a href="https://identity.foundation/peer-did-method-spec/">draft specification</a>, <a href="https://github.com/decentralized-identity/did-methods/blob/main/method-proposals/PROPOSAL-did-peer.md">standardization proposal</a>)</li>
+                <li><code>did:plc</code> (<a href="https://github.com/did-method-plc/did-method-plc/blob/main/website/spec/v0.1/did-plc.md#how-it-works">draft specification</a>)
+                <li><a href="https://w3c-ccg.github.io/cel-spec/">cryptographic event log</a></li>
+          </ul>
         </section>
 
         <section id="incubation">
@@ -551,6 +540,10 @@ formal voting being required.</p>
 However, if a decision is necessary for timely progress and consensus is not
 achieved after careful consideration of the range of views presented, the Chairs
 may call for a group vote and record a decision along with any objections.
+        </p>
+        <p>
+When several work items (DID methods, features) need to be prioritized, the Working Group will use ranked voting.
+This does not preclude the need to have consensus (or a chair decision) for each of the work items being prioritized.
         </p>
         <p>
 To afford asynchronous decisions and organizational deliberation, any resolution
