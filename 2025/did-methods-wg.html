@@ -2,46 +2,9 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DRAFT DID Methods Working Group Charter</title>
-
-    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
-    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css">
-    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
-    <style>
-      ul#navbar {
-        font-size: small;
-      }
-
-      dt.spec {
-        font-weight: bold;
-      }
-
-      dt.spec new {
-        background: yellow;
-      }
-
-      ul.out-of-scope > li {
-        font-weight: bold;
-      }
-
-      ul.out-of-scope > li > ul > li{
-        font-weight: normal;
-      }
-
-      .issue {
-        background: cornsilk;
-        font-style: italic;
-      }
-
-      .todo {
-        color: #900;
-      }
-
-      footer {
-        font-size: small;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2026/01/charter-style.css">
   </head>
   <body>
     <header id="header">
@@ -125,8 +88,6 @@ status page</A> and <a href="#history">detailed change history</a>.
               <i>Juan Caballero (Decentralized Identity Foundation)</i>
               <br>
               <i>Denken Chen (Ministry of Digital Affairs, Taiwan)</i>
-              <br>
-              <i>Additional co-chairs TBD</i>
             </td>
           </tr>
           <tr>
@@ -145,6 +106,8 @@ status page</A> and <a href="#history">detailed change history</a>.
               <strong>Teleconferences:</strong> weekly
               <br>
               <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
+              <br>
+              See also this <a href='https://www.w3.org/groups/wg/didm/calendar/'>group calendar</a>
             </td>
           </tr>
         </table>
@@ -227,6 +190,7 @@ This specification defines a mechanism to create and manage DID
 Documents entirely based on the identifier, such as those based on public cryptographic key information.
 Such a mechanism typically does not support key rotation or deactivation, which makes it more suitable for short-lived DIDs and DID documents.
               </p>
+              <p class="draft-status"><b>Draft state:</b> No draft</p>
               <p class="milestone">
 <b>Expected completion:</b> <i class=todo>START+12M</i>
               </p>
@@ -241,6 +205,7 @@ This specification defines a mechanism to create and manage DID Documents using
 websites.
               </p>
 
+              <p class="draft-status"><b>Draft state:</b> No draft</p>
               <p class="milestone">
 <b>Expected completion:</b> <i class=todo>START+12M</i>
               </p>
@@ -256,6 +221,7 @@ required centralization.
 Such a method is not susceptible to a single point of failure for any technical system needed for the basic operation of the DID Method.
               </p>
 
+              <p class="draft-status"><b>Draft state:</b> No draft</p>
               <p class="milestone">
 <b>Expected completion:</b> <i class=todo>START+18M</i>
               </p>
@@ -338,21 +304,20 @@ Working Group managed test suite.
 
     <!-- Horizontal review -->
 
-    <p>
-Each specification should contain separate sections detailing all known security and
-privacy implications for implementers, Web authors, and end users.
-    </p>
+    <p>Each specification should contain separate sections detailing all known security and
+      privacy implications for implementers, Web authors, and users.</p>
 
     <p>
 More specifically, each DID method specified by the Working Group will include a Threat Model (possibly as a separate document), which will contain a diagram, threats/attacks, responses to these threats/attacks, and any other relevant information (e.g., assumptions, implementation requirements, imported threats e.g., from <a href="https://datatracker.ietf.org/doc/html/rfc3552">RFC 3552</a>, as required by <a href="https://www.w3.org/TR/did/">DID core</a>.
     </p>
 
-    <!-- Design principles -->
-    <p>
-This Working Group expects to follow the TAG
-<a href="https://www.w3.org/TR/design-principles/">
-Web Platform Design Principles</a>.
-    </p>
+    <!-- W3C Statements and Web Platform Design Principles -->
+    <p>This group is expected to be guided by the following documents:</p>
+    <ul>
+      <li><a href="https://www.w3.org/TR/ethical-web-principles/">Ethical Web Principles</a>,</li>
+      <li><a href="https://www.w3.org/TR/privacy-principles/">Privacy Principles</a>,</li>
+      <li><a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.</li>
+    </ul>
 
   </section>
 
@@ -464,15 +429,10 @@ contribute half of a working day per week towards the Working Group. There is no
 minimum requirement for other Participants.
         </p>
         <p>
-The group encourages questions, comments and issues on its public mailing lists
-and document repositories, as described in
-<a href='#communication'>Communication</a>.
-The group also welcomes non-Members to make technical contributions for
-ongoing work, provided they agree to the terms of the
-<a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
+The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>. The group also welcomes non-participants to make technical contributions for ongoing work, provided they agree to the terms of the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>.
         </p>
         <p>
-The Chairs should periodically look through the non-Members who have contributed to the Working Group and consider whether each one should be invited to participate as an <a href="https://www.w3.org/invited-experts/">Invited Expert</a>. If a non-Member contributor would like to participate in meetings, they are encouraged to <a href="https://www.w3.org/groups/wg/didm/instructions/">apply to be an Invited Expert</a>.
+The Chairs should periodically look through the non-W3C-Member contributors to the Working Group and consider whether each one should be invited to participate as an <a href="https://www.w3.org/invited-experts/">Invited Expert</a>. If a non-W3C-Member contributor would like to participate in meetings, they are encouraged to <a href="https://www.w3.org/groups/[type]/[shortname]/instructions/">apply to be an Invited Expert</a>.
         </p>
         <p>
 Participants in the group are required (by the
@@ -509,8 +469,8 @@ specifications, and will be conducted on an as-needed basis.
         </p>
         <p>
 This group primarily conducts its technical work on the public mailing list
-<a id="dmwg" href="mailto:public-dmwg@w3.org">public-dmwg@w3.org</a>
-(<a href="https://lists.w3.org/Archives/Public/public-didmwg/">archive</a>) or on
+<a id="dmwg" href="mailto:public-didm-wgw3.org">public-didm-wg@w3.org</a>
+(<a href="https://lists.w3.org/Archives/Public/public-didm-wg/">archive</a>) or on
 each specification's Github repository. The public is invited to review, discuss
 and contribute to this work.
         </p>
@@ -575,15 +535,9 @@ voting procedures beyond what the Process Document requires.
 
         <h2>Patent Policy</h2>
         <p>
-This Working Group operates under the
-<a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a>
-(Version of 15 September 2020). To promote the widest adoption of Web standards,
-W3C seeks to issue Web specifications that can be implemented, according to this
-policy, on a Royalty-Free basis.
+This Working Group operates under the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a> (Version of 15 May 2025). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
 
-For more information about disclosure obligations for this group, please see the
-<a href="https://www.w3.org/groups/wg/didm/ipr/">
-licensing information</a>.
+For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/[shortname]/ipr/">licensing information</a>.
         </p>
       </section>
 
@@ -594,7 +548,7 @@ licensing information</a>.
         <p>
 This Working Group will use the
 <a href="https://www.w3.org/copyright/software-license/">
-W3C Software and Document license</a> for all of its deliverables.
+W3C Software and Document license</a> for all its deliverables.
         </p>
       </section>
 
@@ -669,7 +623,7 @@ W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:
         <i class="todo"><a href="mailto:">[team contact name]</a></i>
       </address>
 
-<p class="copyright">Copyright © 2025 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
+<p class="copyright">Copyright © 2026 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br>
   <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
   <a href="https://www.w3.org/policies/#disclaimers">liability</a>,
   <a href="https://www.w3.org/policies/#trademarks">trademark</a> and
